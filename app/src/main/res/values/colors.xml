@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Original -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- VB CONNECT Day Theme -->
+    <color name="colorPrimary">#0B3C5D</color>
+    <color name="colorPrimaryVariant">#0A3250</color>
+    <color name="colorSecondary">#00C9D2</color>
+    <color name="colorSecondaryVariant">#00AAB1</color>
+
+    <color name="accentPink">#E04497</color>
+    <color name="accentGreen">#8CC63F</color>
+
+    <color name="background">#FFFFFF</color>
+    <color name="surface">#F6F6F6</color>
+    <color name="card">#FFFFFF</color>
+
+    <color name="textPrimary">#0B3C5D</color>
+    <color name="textSecondary">#506273</color>
+    <color name="textHint">#A7B3BE</color>
+
+</resources>
