@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <!-- Toolbar -->
+    <include layout="@layout/chat_toolbar"/>
+
+    <!-- Message List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomLayout"
+        android:layout_marginTop="60dp"/>
+
+    <!-- Bottom Input Layout -->
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:id="@+id/btnEmoji"
+            android:src="@drawable/ic_emoji"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+
+        <EditText
+            android:id="@+id/edtMessage"
+            android:hint="Type a message"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:layout_width="0dp"
+            android:layout_height="40dp"/>
+
+        <ImageView
+            android:id="@+id/btnAttach"
+            android:src="@drawable/ic_attach"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+
+        <ImageView
+            android:id="@+id/btnMic"
+            android:src="@drawable/ic_mic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

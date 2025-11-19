@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:padding="16dp">
+
+    <!-- Left big card (Welcome) -->
+    <!-- Right phone input card -->
+    <LinearLayout
+        android:id="@+id/phoneCard"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_card"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:padding="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.48"
+        android:elevation="4dp">
+
+        <!-- three-dot menu imitation at top-right -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter your phone number"
+                android:textSize="16sp"
+                android:textColor="@color/textPrimary"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/menuDots"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/dots"
+                android:layout_gravity="end"
+                android:tint="@color/textPrimary"
+                android:contentDescription="menu"
+                tools:ignore="UseAppTint" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VB Connect will need to verify your phone number. Carrier charges may apply."
+            android:textColor="@color/textSecondary"
+            android:textSize="12sp"
+            android:layout_marginTop="8dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+91"
+                android:padding="10dp"
+                android:textColor="@color/textPrimary"
+                android:background="@drawable/rounded_card"/>
+
+            <EditText
+                android:id="@+id/phoneEdit"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:inputType="phone"
+                android:hint="Phone number"
+                android:paddingLeft="12dp"
+                android:background="@android:color/transparent"
+                android:textColor="@color/textPrimary"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Next"
+            android:textColor="@android:color/white"
+            android:background="@drawable/rounded_button"/>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="40dp"
+        android:background="@color/accentPink"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/txtMsgRecv"
+
+            android:textColor="@color/background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Received message" />
+
+        <TextView
+            android:id="@+id/txtTimeRecv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="11:30"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+</LinearLayout>
